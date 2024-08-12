@@ -1,4 +1,4 @@
-
+'use strict';
 //Tipos de Variaveis
 // LET e CONST = usado no JS depois de 2015
 // VAR = utilizado antes de 2015, só deve ser utilizado se compatibilidade for um problema
@@ -331,13 +331,12 @@ const age = 23;
 //exemplo de operador ternario, NESTE caso o operador ternario é um expression, e este expression pode ser colocado dentro de um bloco statment
 console.log(`"I'd like a glass of ${age >= 18 ? 'Water💧' : 'Wine 🍷'}"`);
 
-*/
 
 
 
 const bill = 301;
 
-/* Write your code below. Good luck! 🙂 */
+
 
 let tip = bill >= 50 && bill < 300 ? bill * 0.15 : bill * 0.20;
 
@@ -347,49 +346,18 @@ console.log(tip);
 
 
 
+let numNeighbours = Number(prompt(' How many neighbours conutries does your country have?'));
+
+if (numNeighbours === 1) { // Nunca esquecer que '1' sendo pegado pelo promp é a mesa coisa que false, ou seja é necessario converter o input para tipo numero!!!!!!
+    console.log("Only one border!")
+} else if (numNeighbours > 1) {
+    console.log("More then 1 border!")
+} else {
+    console.log("No borders!")
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 
