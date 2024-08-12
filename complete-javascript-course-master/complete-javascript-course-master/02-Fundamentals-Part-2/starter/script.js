@@ -492,12 +492,12 @@ let numOfCust = Number(lines[0]);
 console.log();
 let billAmounts = new Array(lines[1].split(' '));
 
-//if (n >= 0) {
-//        function calcPerfNum(n) {
-//        let checkN = Math.sqrt(n);
-//        return ((checkN * checkN) === n);
+if (n >= 0) {
+    function calcPerfNum(n) {
+        let checkN = Math.sqrt(n);
+        return ((checkN * checkN) === n);
     }
-return false;
+    return false;
 }
 let discountedCust = 0;
 for (let i = 0; i < billAmounts.length; i++) {
