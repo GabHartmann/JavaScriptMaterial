@@ -460,10 +460,6 @@ for (let i = 0; i < gabriel.length; i++) {
 }
 
 
-
-
-
-
 ;
 
 const fCalc = function (n) {
@@ -480,31 +476,80 @@ const fCalc = function (n) {
 
 console.log(fCalc(7));
 
+
+
+
+const gabriel = [
+    'Gabriel',
+    'Hartmann',
+    2002,
+    'Programmer',
+    ['Tione', 'Saert', 'Cyronical'],
+    true
+];
+
+// 4 ... 3 .... 2
+for (let i = gabriel.length - 1; i >= 0; i--) {
+    console.log(gabriel[i]);
+}
+
+
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log("-----Starting exercise")
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Lifting weight repetition ${rep}`);
+
+    }
+}
+
+
+
+
+rep = 1;
+while (rep <= 10) {
+    console.log(`Lifting weight repetition ${rep}`);
+    rep++;
+}
+
+
+
+let dice = Math.trunc((Math.random() * 6 + 1));
+
+//console.log(dice);
+
+
+while (dice !== 6) {
+    console.log(`Rolled ${dice}`)
+    dice = Math.trunc((Math.random() * 6 + 1));
+}
+
+
+
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+let tips = [];
+let totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+    tips.push(calcTip(bills[i]));
+    totals.push(tips[i] + bills[i]);
+}
+
+const calcAverage = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+
+console.log(tips);
+console.log(totals);
+console.log(calcAverage(totals));
+
 */
-
-
-let input = `6\n25 77 54 81 48 34`;
-
-
-let lines = input.split("\n");
-let numOfCust = Number(lines[0]);
-
-console.log();
-let billAmounts = new Array(lines[1].split(' '));
-
-if (n >= 0) {
-    function calcPerfNum(n) {
-        let checkN = Math.sqrt(n);
-        return ((checkN * checkN) === n);
-    }
-    return false;
-}
-let discountedCust = 0;
-for (let i = 0; i < billAmounts.length; i++) {
-    if (calcPerfNum(billAmounts[i])) {
-        discountedCust++;
-    }
-}
-
-
-
